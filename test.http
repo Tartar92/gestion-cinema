@@ -1,0 +1,150 @@
+GET http://localhost:3010/api/seances
+ 
+###
+ 
+GET http://localhost:3010/api/seances/661fa713118c544e0af2d63d
+ 
+###
+ 
+POST http://localhost:3010/api/seances
+content-type: application/json
+ 
+{
+    "film":
+    {
+        "titre": "test1",
+        "realeaseYear": "2024-04-17T12:00:00Z",
+        "genre": "action",
+        "directors": {
+            "director": {
+                "nom": "tarik",
+                "dateNaissance": "2024-04-17T12:00:00Z",
+                "biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            "directorbis": {
+                "nom": "tarik2",
+                "dateNaissance": "2024-04-17T12:00:00Z",
+                "biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            }
+        }
+    },
+    "date": "2024-04-17T12:00:00Z",
+    "time": "12:00",
+    "availableSeats": 100
+}
+ 
+ 
+###
+ 
+DELETE http://localhost:3010/api/seances/661f9d56ca969489782048d3
+ 
+ 
+###
+PUT http://localhost:3010/api/seances/661f8d762357125add97ef6c
+content-type: application/json
+ 
+{
+    "film":
+    {
+        "titre": "test",
+        "realeaseYear": "2024-04-17T12:00:00Z",
+        "genre": "action",
+        "directors": {
+            "director": {
+                "nom": "tarik",
+                "dateNaissance": "2024-04-17T12:00:00Z",
+                "biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            "directorbis": {
+                "nom": "tarik2",
+                "dateNaissance": "2024-04-17T12:00:00Z",
+                "biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            }
+        }
+    },
+    "date": "2024-04-17T12:00:00Z",
+    "time": "12:00",
+    "availableSeats": 100
+}
+
+
+GET http://localhost:3010/api/films
+ 
+###
+ 
+GET http://localhost:3010/api/films/661fa713118c544e0af2d63d
+ 
+###
+ 
+POST http://localhost:3010/api/films
+content-type: application/json
+ 
+{
+    "titre": "test",
+    "realeaseYear": "2024-04-17T12:00:00Z",
+    "genre": "action",
+    "directors":
+ 
+        {
+            "nom": "tarik",
+            "dateNaissance": "2024-04-17T12:00:00Z",
+            "biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        }
+}
+ 
+###
+ 
+DELETE http://localhost:3010/api/films/661f9d56ca969489782048d3
+ 
+ 
+###
+PUT http://localhost:3010/api/films/661f8d762357125add97ef6c
+content-type: application/json
+ 
+{
+    "titre": "test",
+    "realeaseYear": "2024-04-17T12:00:00Z",
+    "genre": "action",
+    "directors": [
+ 
+        {
+            "nom": "tarik",
+            "dateNaissance": "2024-04-17T12:00:00Z",
+            "biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        },
+ 
+    ]
+}
+ 
+GET http://localhost:3010/api/realisateurs
+ 
+###
+ 
+GET http://localhost:3010/api/realisateurs/6620050727df937d6a75ba57
+ 
+###
+ 
+POST http://localhost:3010/api/realisateurs
+content-type: application/json
+ 
+{
+    "nom": "tarik",
+    "dateNaissance": "2024-04-17T12:00:00Z",
+    "biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}
+ 
+###
+ 
+DELETE http://localhost:3010/api/realisateurs/6620050227df937d6a75ba55
+ 
+ 
+###
+PUT http://localhost:3010/api/realisateurs/6620050227df937d6a75ba55
+content-type: application/json
+ 
+{
+    "nom": "tarik2",
+    "dateNaissance": "2024-04-17T12:00:00Z",
+    "biography": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+}
+ 
