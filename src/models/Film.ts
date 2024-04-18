@@ -12,7 +12,7 @@ const filmSchema: Schema = new mongoose.Schema({
     title: String,
     releaseYear: Number,
     genre: String,
-    directors: directorModel.schema
+    directors: [directorModel.schema]
 });
  
 const filmModel = mongoose.model<IFilm>('Film', filmSchema);
